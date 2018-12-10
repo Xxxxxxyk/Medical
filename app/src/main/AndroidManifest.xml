@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dream.medical">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    //获取统计数据
+
+    <!-- 这个权限用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!-- 这个权限用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"></uses-permission>
+
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".view.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".view.MainActivity"
+            android:screenOrientation="portrait" />0
+
+        <activity
+            android:name=".view.DoctorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.AppointMentActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.TestActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.ResultActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.ApppointDoctorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.DoctorDescActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.PayActivity"
+            android:screenOrientation="portrait" >
+
+        </activity>
+
+        <activity
+            android:name=".view.DissmissActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.RegisterActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.GetAppointDoctorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.GoDoctorActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".view.CameraActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".view.Picture1Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.Picture2Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.Picture3Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.Picture4Activity" android:screenOrientation="portrait"/>
+        <activity android:name=".view.BaiduMapActivity" android:screenOrientation="portrait"/>
+
+        <service android:name="com.baidu.location.f" android:enabled="true" android:process=":remote"> </service>
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="1lRuttgLtFwxThLGvTTS6lGn3ja1xaeH" />
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5bb87f2db465f53c2800023b" />
+        <!-- Channel ID用来标识App的推广渠道，作为推送消息时给用户分组的一个维度。-->
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="App" />
+
+    </application>
+
+</manifest>

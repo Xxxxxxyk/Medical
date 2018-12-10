@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".view.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:background="#ffbbbbbb"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:text="心理医生"
+            android:textColor="#262626"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar">
+
+        <Button
+            android:id="@+id/btn_appointment_doctor"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:background="@drawable/shape_home_background_1"
+            android:text="预约医生" />
+
+        <Button
+            android:id="@+id/btn_appointment_ask"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="42dp"
+            android:background="@drawable/shape_home_background_2"
+            android:text="预约问诊" />
+
+        <Button
+            android:id="@+id/btn_go_doctor"
+            android:layout_marginTop="42dp"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_home_background_3"
+            android:text="立即问诊" />
+
+        <Button
+            android:id="@+id/btn_dismiss_appointment"
+            android:layout_marginTop="42dp"
+            android:layout_width="150dp"
+            android:layout_height="90dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/shape_home_background_4"
+            android:text="取消预约" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

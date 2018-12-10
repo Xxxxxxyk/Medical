@@ -1,0 +1,55 @@
+package com.dream.medical.m;
+
+import java.util.List;
+
+public class TestLitleBean {
+    public List<String> field_2;
+    public List<String> field_3;
+    public List<String> field_4;
+    public List<String> field_5;
+    public List<String> field_6;
+    public List<String> field_7;
+    public List<String> field_8;
+    public List<String> field_9;
+    public List<String> field_10;
+    public List<String> field_11;
+    public List<String> field_12;
+    public List<String> field_13;
+    public List<String> field_14;
+    public List<String> field_15;
+    public List<String> field_16;
+    public List<String> field_17;
+    public List<String> field_18;
+    public List<String> field_19;
+    public List<String> field_20;
+    public List<String> field_21;
+    public List<String> field_22;
+    public List<String> field_23;
+    public List<String> field_24;
+    public List<String> field_25;
+    public List<String> field_26;
+    public List<String> field_27;
+    public List<String> field_28;
+    public List<String> field_29;
+    public List<String> field_30;
+    public List<String> field_31;
+    public List<String> field_32;
+    public List<String> field_33;
+    public List<String> field_34;
+    public List<String> field_35;
+    public List<String> field_36;
+    public List<String> field_37;
+    public List<String> field_38;
+    public List<String> field_39;
+    public List<String> field_40;
+    public List<String> field_41;
+    public List<String> field_42;
+    public List<String> field_43;
+    public List<String> field_44;
+    public List<String> field_45;
+    public List<String> field_46;
+    public List<String> field_47;
+    public List<String> field_48;
+    public List<String> field_49;
+    public List<String> field_50;
+}

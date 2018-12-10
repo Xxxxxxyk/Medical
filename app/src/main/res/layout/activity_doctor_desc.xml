@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tl="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="49dp"
+        android:background="#ffbbbbbb"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            tools:ignore="HardcodedText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="预约时间"
+            android:textColor="#262626"
+            android:textSize="18sp" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/personal_header_view"
+        android:layout_width="match_parent"
+        android:layout_height="172dp"
+        android:background="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+
+        <ImageView
+            android:id="@+id/shadwView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#332C97DE"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:id="@+id/personal_avatar_view"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+
+        <TextView
+            android:id="@+id/personal_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/personal_avatar_view"
+            android:layout_centerHorizontal="true"
+            android:ellipsize="end"
+            android:maxEms="9"
+            android:layout_marginTop="30dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line9"
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_alignParentBottom="true"
+            android:background="#bbbbbb" />
+
+    </RelativeLayout>
+
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tl_7"
+        tl:tl_iconVisible="false"
+        tl:tl_indicator_color="#eeeeee"
+        tl:tl_indicator_corner_radius="1.5dp"
+        tl:tl_indicator_height="3dp"
+        tl:tl_indicator_style="TRIANGLE"
+        tl:tl_indicator_width="10dp"
+        tl:tl_textsize="14sp"
+        app:tl_indicator_width_equal_title="true"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#2C97DE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/personal_header_view" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_time"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tl_7" />
+
+
+</android.support.constraint.ConstraintLayout>
